@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <header><!--inicio Cabecera (header) de la pagina-->
+        <nav><!--Navegador de la pagina-->
+            <a href="./index.html">Inicio</a>
+            <a href="./index.html">Portafolio</a>
+            <a href="./index.html">¿Por que nuestros Servicios?</a>
+            <a href="./index.html">Ubicacion</a>
+            <a href="form.html">Contacto</a>
+            <a href="index.html"><button class="btn">Spanish</button></a>
+            <a href="indexING.html"> <button class="btn">English</button></a>              
+        </nav><!--Fin del navegador-->
+        <!--seccion del header-->
+        <section class="textos-header" id="inicio">
+            <h1>Solutec</h1>
+            <h2>Soluciones informáticas confiables y eficientes</h2>
+    
+        
+        </section>
+        <!--Fin seccion-->
+        <!--creamos un div para darle estilo al fin del header-->
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div><!--Fin del header-->
+    </header><!--Fin cabecera (header) de la pagina-->
+
+
+    <!--Creamos un div para un fomulario-->
+    <div class="form-content">
+        <h2>Diligencia el formulario</h2>
+        <!--cramos un Div para la pimera parte del fomulario-->
+        <div class="formulario">
+            <div class="div_form">
+                <label for="name">Nombre</label><br>
+                <input type="text" name="name" id="name" value="Nombre"> <br>
+
+                <label for="Email">Correo Electronico</label> <br>
+                <input type="email" name="email" id="email" value="Ingresa tu correo electronico">
+
+                <label for="number">Numero Celular</label> <br>
+                <input type="text" name="number" id="number" value="Ingresa tu numero celular">
+
+                <label for="addres">Dirección</form></label> <br>
+                <input type="text" name="addres" id="addres" value="Ingresa Tu Direccion">
+                <label for="text">ELige servicio</label> <br>  
+                <select name="" id="">
+                    <option value="">Asesoria</option>
+                    <option value="">Mantenimiento</option>
+                    <option value="">Soporte_Tecnico</option>
+                </select>
+            </div class="div_form"><!--Fin div primera parte de formulario-->
+            <!--Creamos div  para segunda parte formulario-->
+            <div> 
+
+                <label for="text">Descripcón</label> <br>
+                <textarea name="" id="" cols="30" rows="10">Aqui puedes poner una breve descripcion de el requerimiento</textarea>
+
+                <label for="img">Imagen</form></label>
+                <input type="file">
+
+                <input  class="btn" type="submit" value="Enviar">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/form.html#">
+
+                <input type="hidden" name="captcha" value="false">
+            </div><!--Fin div segunda parte formulario-->
+        </div><!--Fin div de formulario-->
+    </div>
+
+</body>
+
+</html>
